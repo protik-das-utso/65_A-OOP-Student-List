@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-search">
+        <div class="logo">
+            <p>65_A</p>
+            <p>4th Semester</p>
+        </div>
+        <div class="search">
+            <div>
+                <label for="searchCriteria" class="search-label">Search by: <span></span></label>
+            </div>
+            <div>
+                <select id="searchCriteria" class="search-criteria">
+                    <option value="id">ID</option>
+                    <option value="name">Name</option>
+                </select>
+                <!-- Search input -->
+                <input type="text" id="searchInput" placeholder="Search for a student..." class="search-input">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Student cards will be dynamically generated here -->
+    <div class="container" id="student-container"></div>
+    
+    <!-- Popup Modal -->
+    <div id="imagePopup" class="popup" onclick="closePopup()">
+        <img id="popupImage" class="popup-image" />
+        <button class="close-btn" onclick="closePopup()">×</button>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
